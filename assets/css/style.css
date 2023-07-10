@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor__general {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+header {
+    width: 100vh;
+    grid-area: header;
+    position: fixed;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: main;
+}
+
+#imagen {
+    margin-left: 10% ;
+}
+
+#titulo__stikers{
+    margin-top: 50%;
+    margin-bottom: 50px;
+}
+
+#contenedor__sticker{
+    display: flex;
+    align-items: center;
+}
+
+#compra__stikers1{
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#compra__stikers2{
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+}
+#compra__stikers3{
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#stikers{
+    width: 300px;
+    height: 300px;
+}
+
+#calcular__stikers{
+
+    margin-top: 20px;
+    margin-bottom: 50%;
+}
+
+#contenedor__password{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    margin-bottom: 50%;
+
+}
+
+#calcular__password{
+    height: auto;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+#selector{
+    text-align: center;
+    gap: 50px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+footer {
+    height: 100vh;
+    grid-area: footer;
+}
