@@ -20,8 +20,10 @@ function calcular() {
         alert("El numero ingresado debe ser mayor o igual de 0");
     } else if (suma <= a) {
         parrafo.innerHTML = "Llevas : " + suma;
+        parrafo.style.color = "blue";
     } else {
         parrafo.innerHTML = "Llevas demasiados stikers!!";
+        parrafo.style.color = "red";
     }
 
 }
